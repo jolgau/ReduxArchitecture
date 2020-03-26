@@ -1,0 +1,8 @@
+<div>
+    <input type='text' [(ngModel)]='productName'>
+    <button (click)='addProduct()'>Add product</button>
+</div>
+
+<div *ngFor="let product of products$ | async">
+    {{ product.name}}
+</div>
