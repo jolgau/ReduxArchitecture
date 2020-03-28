@@ -9,25 +9,25 @@ export enum ProductsActionTypes {
 }
 
 export class CreateProductAction implements Action {
-    type = ProductsActionTypes.Create;
+    readonly type = ProductsActionTypes.Create;
     constructor(public payload: Product) {
     }
 }
 
 export class UpdateProductAction implements Action {
-    type = ProductsActionTypes.Update;
+    readonly type = ProductsActionTypes.Update;
     constructor(public payload: Product) {
     }
 }
 
 export class DeleteProductAction implements Action {
-    type = ProductsActionTypes.Delete;
+    readonly type = ProductsActionTypes.Delete;
     constructor(public payload: number) {
     }
 }
 
 export class GetProductAction implements Action {
-    type = ProductsActionTypes.Get;
+    readonly type = ProductsActionTypes.Get;
     payload = undefined;
 }
 
